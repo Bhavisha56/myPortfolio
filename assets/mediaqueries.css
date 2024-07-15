@@ -1,0 +1,54 @@
+@media screen and (max-width:1200px) {
+    #navitems{
+    display:none;
+    }
+    #navmenu{
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section_textp1 {
+      font-size: 1.5rem;
+    }
+  
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    /* Make the project titles appear above the descriptions */
+    /*  */
+    #about{
+      /* margin-top: 125rem; */
+      text-align: center;
+      justify-content: center;
+    }
+    .text-container p{
+      margin-right: 2000rem;
+      /* width: 90%;  */
+    }
+  
+    .project p {
+      order: 2;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    /* Make the project titles appear above the descriptions */
+    /*  */
+    #projects{
+      margin-top: 125rem;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .project p {
+      order: 2;
+    }
+  }
+  @media (max-width: 600px) {
+    .skill {
+        width: calc(100% - 20px);
+    }
+}

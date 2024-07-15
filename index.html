@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <nav id="navitems">
+        <div class="logo">BHAVISHA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="navmenu">
+        <div class="logo">BHAVISHA</div>
+        <div class="navmenu2">
+            <div class="iconmenu" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menulinks">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+
+
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="assets/portfoliopic-Photoroom-transformed.jpeg" alt="Profile Picture">
+        </div>
+        <div class="sectiontext">
+            <p class="section_textp1">Hello, I'm</p>
+            <h1 class="title">BHAVISHA</h1>
+            <p class="section_textp2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn2" onclick="window.open('assets/bhavisha_resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn1" onclick="document.getElementById('contact').scrollIntoView()">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socialprofile">
+                <img src="assets/linkedin.png" alt="linkdinprofile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/bhavisha-kumar-0b674322a/'">
+                <img src="assets/github.png" alt="githubprofile" class="icon"
+                    onclick="location.href='https://github.com/Bhavisha56'">
+
+            </div>
+        </div>
+    </section>
+    <section id="about" style="margin-bottom: 10rem;">
+        <p class="section_textp1">Get To Know More</p>
+        <h1 class="title"><img src="assets/profile-user.png">About me</h1>
+        <!-- <div class="section-container"> -->
+        <div class="text-container">
+            <p>
+                I am a passionate and dedicated software developer with a strong foundation in Java, HTML, CSS, and
+                JavaScript. My expertise extends to web development, where I enjoy creating dynamic and responsive
+                applications. I am also proficient in Data Structures and Algorithms (DSA), which I regularly apply to
+                solve complex problems efficiently.
+
+                Beyond my core skills, I have a keen interest in Artificial Intelligence and Machine Learning (AI/ML). I
+                am continuously exploring new advancements in AI/ML, eager to integrate these technologies into
+                innovative projects.
+
+                I thrive on learning new technologies and tackling challenging projects that push my boundaries. My goal
+                is to develop solutions that make a positive impact and contribute to the ever-evolving tech landscape.
+            </p>
+    </section>
+    <section id="projects">
+        <div class="project" style="margin-bottom: 10rem;">
+            <h2 id="proj"><img src="assets/blueprint.png">Projects</h2>
+            <h3>Quiz App Using Java</h3>
+            <p>
+                <a href="https://github.com/Bhavisha56/Quiz-App-using-java.git">GitHub</a><br>
+            <ul>
+                <li> Developed a comprehensive quiz application using Java, integrating javax.swing and java.awt
+                    libraries for a graphical user interface.</li>
+
+                <li>Implemented multiple screens including login, rules display, quiz questions, and score display to
+                    guide users through the quiz process seamlessly.</li>
+
+                <li>Interactive UI elements: Designed buttons, labels, and radio buttons for a user-friendly experience.
+                </li>
+            </ul>
+            </p>
+            <div id="project2" style="margin-bottom: 10rem;">
+                <h3>
+                    SHORTEST PATH FINDER
+                </h3>
+                <p>
+
+                    <a href="https://github.com/Bhavisha56/Shortest-path-finder.git">GitHub</a><br>
+                <ul>
+                    <li>Developed a shortest path finder web application using HTML, CSS, JavaScript, and Vis.js to
+                        visualize
+                        minimum travel times between cities, incorporating Dijkstra's algorithm for shortest path
+                        calculation.</li>
+
+                    <li> Implemented a graph-based pathfinding tool that uses Dijkstra's algorithm to compute and
+                        display the
+                        shortest travel routes, with visual representation using vis.js library.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" style="margin-top: 20rem; padding: 0;">
+        <div class="skillsset">
+            <h2 id="skill"><img src="assets/download.png">Skills</h>
+                <ul class="list" style="flex-direction: column; list-style: none;">
+                    <li>1. JAVA</li>
+                    <li>2. HTML</li>
+                    <li>3. CSS</li>
+                    <li>4. JAVASCRIPT</li>
+                    <li>5. Data Structure & Algorithm</li>
+                </ul>
+        </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-containers" style="margin-top: 10rem; width: 100%; height: 50%;" >
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Contact Info</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="f5b93ac3-ef38-43e3-aece-e9d45a056e75">
+                <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-right">
+           <!-- <img src="right_img.jpg"> -->
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
